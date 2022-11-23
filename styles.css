@@ -1,0 +1,54 @@
+header {
+    background: beige;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    height: 100px;
+    margin-left: 50px;
+    padding: 20px 0;
+}
+
+h1 {
+    text-align: center;
+    margin-right: 100px;
+}
+
+nav {
+    width: 90%;
+    background: rgb(216, 216, 243);
+    display: flex;
+    margin: auto;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.list {
+    cursor: pointer;
+}
+
+.list li {
+    display: none;
+    transition: all 1s ease-in-out forward;
+}
+
+.list:hover li {
+    display: block;
+    transition: all 1s ease-in-out;
+}
