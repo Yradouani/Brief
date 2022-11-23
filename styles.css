@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap');
+
+* {
+    font-family: 'Maven Pro', sans-serif;
+}
+
 header {
     background: beige;
     display: flex;
@@ -17,7 +23,6 @@ h1 {
 
 nav {
     width: 90%;
-    background: rgb(216, 216, 243);
     display: flex;
     margin: auto;
 
@@ -29,26 +34,38 @@ a {
 }
 
 .nav-list {
-    display: flex;
     width: 100%;
-    justify-content: space-around;
+    text-align: center;
+    padding: 0;
 }
 
 li {
     list-style-type: none;
-    margin: 10px 0;
+    margin: 30px 0;
+}
+
+li span {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .list {
     cursor: pointer;
+    margin: 10px 0;
+    background: rgb(72, 81, 81);
+    padding: 30px;
+    color: white;
 }
 
 .list li {
-    display: none;
-    transition: all 1s ease-in-out forward;
+    /* display: none; */
+    transition: all 2s ease-in-out;
+    position: absolute;
+    opacity: 0;
 }
 
 .list:hover li {
-    display: block;
-    transition: all 1s ease-in-out;
+    /* display: flex; */
+    position: static;
+    opacity: 1;
 }
